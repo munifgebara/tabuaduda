@@ -1,0 +1,13 @@
+<ion-view view-title="TabuaDuda">
+  <ion-content>
+<div ng-repeat="teste in testes">
+    <button class="button button-block button-assertive" ng-hide="teste.r===teste.u" ng-click="responde(teste)">
+      {{teste.n}} x {{teste.m}}
+    </button>
+    <button class="button button-block button-balanced"  ng-show="teste.r===teste.u">
+      {{teste.n}} x {{teste.m}} = {{teste.r}}
+    </button>
+<div>
+  </div>
+</ion-content>
+</ion-view>
